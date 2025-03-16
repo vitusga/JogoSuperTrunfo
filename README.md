@@ -3,6 +3,7 @@
 Bem-vindo ao repositório do Jogo Super Trunfo, um jogo de cartas desenvolvido em linguagem C como parte de um desafio para aula de programação!
 
 //// Sobre o Projeto ////
+
 Este projeto é uma implementação do clássico jogo de cartas Super Trunfo, onde os jogadores comparam atributos de cartas para determinar o vencedor de cada rodada.
 
 Objetivo Atual: O usuário pode cadastrar suas próprias cartas no jogo.
