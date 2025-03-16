@@ -1,4 +1,4 @@
-// Version 1.002
+// Version 1.05
 // importando bibliotecas fundamentais para o funcionamento do código
 #include <stdio.h> 
 #include <stdlib.h> // alocação de memória dinâmica malloc, free, exit, etc
@@ -28,14 +28,12 @@ do {
     
     printf("Digite o numero da cidade (1-4): \n ");
     scanf(" %d", &cardcode); // pega o valor de cardcode
-    cardcode = 0; // Inicializa o cardcode em 0 para evitar valores "lixo" e problemas de código
-    do {
+    if (cardcode < 1 || cardcode > 4) { // Condição
         printf("Numero invalido! Digite um numero entre 1 e 4: \n ");
-        scanf(" %d", &cardcode); 
-    } while (cardcode < 1 || cardcode > 4);
-
-    printf("Quantos pontos turisticos essa cidade possui? \n ");
-    scanf(" %d", &turisticpoints);
+    } else {
+        printf("Quantos pontos turisticos essa cidade possui? \n ");
+        scanf(" %d", &turisticpoints);
+    }
 
     printf("O numero de habitantes: \n ");
     scanf(" %f", &population);
